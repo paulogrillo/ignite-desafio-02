@@ -29,7 +29,10 @@ export function TaskList() {
       title: newTaskTitle,
       isComplete: false
     }
-    setTasks(oldState =>  [...oldState, newTask])
+
+    setNewTaskTitle('');
+    setTasks(oldState =>  [...oldState, newTask]); 
+    
     
  
     } 
